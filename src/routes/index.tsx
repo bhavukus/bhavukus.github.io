@@ -1,24 +1,48 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AnimatedBackground } from "@/components/site/AnimatedBackground";
+import { Cursor } from "@/components/site/Cursor";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Skills } from "@/components/site/Skills";
+import { Projects } from "@/components/site/Projects";
+import { Experience } from "@/components/site/Experience";
+import { Achievements } from "@/components/site/Achievements";
+import { Services } from "@/components/site/Services";
+import { Testimonials } from "@/components/site/Testimonials";
+import { Blog } from "@/components/site/Blog";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Alex Chen — Founder, AI Engineer, Builder" },
+      { name: "description", content: "The personal site of Alex Chen — founder and AI engineer building products at the intersection of design, engineering, and business." },
+      { property: "og:title", content: "Alex Chen — Founder, AI Engineer, Builder" },
+      { property: "og:description", content: "Building AI-native products that give individuals the leverage of entire teams." },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main className="relative min-h-screen overflow-x-clip text-foreground">
+      <AnimatedBackground />
+      <Cursor />
+      <Nav />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+      <Achievements />
+      <Services />
+      <Testimonials />
+      <Blog />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
