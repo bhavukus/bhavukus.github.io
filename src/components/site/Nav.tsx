@@ -21,7 +21,7 @@ export function Nav() {
       />
       <header className="fixed inset-x-0 top-4 z-40 mx-auto flex max-w-6xl items-center justify-between px-4">
         <a href="#top" className="glass rounded-full px-4 py-2 text-sm font-semibold tracking-tight">
-          <span className="text-gradient">◆ ALEX / CHEN</span>
+          <span className="text-gradient">◆ BHAVUK</span>
         </a>
         <nav className="glass hidden items-center gap-1 rounded-full px-2 py-2 md:flex">
           {links.map((l) => (

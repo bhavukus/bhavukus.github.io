@@ -1,8 +1,8 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
-import { ArrowRight, Download, Github, Linkedin, Twitter, Mail, MousePointer2 } from "lucide-react";
+import { ArrowRight, Github, Linkedin, Twitter, Mail, Instagram, MousePointer2 } from "lucide-react";
 
-const roles = ["Founder.", "AI Engineer.", "Problem Solver.", "Visionary."];
+const roles = ["Founder.", "AI Builder.", "Software Engineer.", "Full-Stack Developer.", "Entrepreneur.", "Problem Solver."];
 
 export function Hero() {
   const [i, setI] = useState(0);
@@ -24,7 +24,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-primary" />
           </span>
-          Available for select engagements · 2026
+          Open to collaborations · Delhi NCR
         </motion.div>
 
         <motion.h1
@@ -34,7 +34,7 @@ export function Hero() {
           className="mt-8 text-5xl font-semibold leading-[1.02] tracking-tight text-foreground md:text-7xl lg:text-8xl"
         >
           Hello, I'm{" "}
-          <span className="text-gradient">Alex Chen</span>.
+          <span className="text-gradient">Bhavuk</span>.
           <br />
           <span className="text-muted-foreground/60">I build</span>{" "}
           <span className="relative inline-block align-baseline">
@@ -59,8 +59,9 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg"
         >
-          Shipping AI-native products at the intersection of design, engineering,
-          and business. Turning ambitious ideas into companies people love.
+          Computer Science student and founder building AI-first products that solve meaningful
+          real-world problems. Currently building Groomsta and exploring autonomous AI systems
+          for high-impact industries.
         </motion.p>
 
         <motion.div
@@ -75,9 +76,6 @@ export function Hero() {
             <span className="pointer-events-none absolute inset-0 rounded-full opacity-0 blur-xl transition-opacity group-hover:opacity-60"
               style={{ background: "var(--gradient-text)" }} />
           </a>
-          <a href="#" className="glass inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.03]">
-            <Download className="h-4 w-4" /> Resume
-          </a>
           <a href="#contact" className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground">
             Contact Me
           </a>
@@ -89,8 +87,14 @@ export function Hero() {
           transition={{ duration: 1, delay: 0.9 }}
           className="mt-12 flex items-center justify-center gap-2"
         >
-          {[Github, Linkedin, Twitter, Mail].map((Icon, idx) => (
-            <a key={idx} href="#" className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:scale-110 hover:text-foreground">
+          {[
+            { Icon: Github, href: "https://github.com/bhavukus" },
+            { Icon: Linkedin, href: "https://linkedin.com/in/bhavukus" },
+            { Icon: Twitter, href: "https://x.com/bhavukus" },
+            { Icon: Instagram, href: "https://instagram.com/pvtfouonder" },
+            { Icon: Mail, href: "mailto:bhavukus@gmail.com" },
+          ].map(({ Icon, href }, idx) => (
+            <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:scale-110 hover:text-foreground">
               <Icon className="h-4 w-4" />
             </a>
           ))}
