@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Send, Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Send, Mail, Github, Linkedin, Twitter, Instagram, Calendar, Video } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 export function Contact() {
