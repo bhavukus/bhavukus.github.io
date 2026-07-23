@@ -3,10 +3,10 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const projects = [
-  { name: "Helios AI", tag: "AI Platform · 2025", problem: "Teams drowning in unstructured data.", solution: "Agentic workflows that read, reason, and act.", metric: "10k+ users · $1.4M ARR", stack: ["Next.js", "Rust", "pgvector"], hue: "from-blue-500/40 via-indigo-500/20 to-purple-500/40" },
-  { name: "Loop OS", tag: "Founder Tool · 2024", problem: "Founders juggling 12 tools daily.", solution: "One AI-native workspace for the whole company.", metric: "YC W24 · Series A", stack: ["TypeScript", "tRPC", "Postgres"], hue: "from-emerald-500/30 via-cyan-500/20 to-blue-500/40" },
-  { name: "Prism", tag: "Design System · 2023", problem: "Brand debt across product surfaces.", solution: "Token-first system used by 5 startups.", metric: "500k+ downloads", stack: ["React", "Radix", "Tailwind"], hue: "from-fuchsia-500/40 via-pink-500/20 to-rose-500/40" },
-  { name: "Signal", tag: "AI Research · 2022", problem: "LLM hallucination in enterprise search.", solution: "Grounded retrieval with citation scoring.", metric: "Open source · 12k stars", stack: ["Python", "PyTorch", "FAISS"], hue: "from-amber-500/40 via-orange-500/20 to-red-500/40" },
+  { name: "Groomsta", tag: "AI-powered Grooming Marketplace · 2026", problem: "Booking salon and grooming services is fragmented and inconvenient.", solution: "A modern platform connecting customers with salons and doorstep grooming professionals.", metric: "Pilot launch complete", stack: ["React", "Node.js", "Firebase", "AI"], hue: "from-blue-500/40 via-indigo-500/20 to-purple-500/40" },
+  { name: "Healthcare AI OS", tag: "Autonomous AI Operating System", problem: "Healthcare organizations lose billions through inefficient administration.", solution: "AI agents that automate administrative workflows end-to-end.", metric: "Concept & architecture", stack: ["AI Agents", "LLMs", "Automation"], hue: "from-emerald-500/30 via-cyan-500/20 to-blue-500/40" },
+  { name: "Byteify", tag: "Educational Tech Content · 2023", problem: "Learning programming should be engaging, not intimidating.", solution: "Educational coding content and beginner-friendly projects.", metric: "18k+ content views", stack: ["HTML", "CSS", "JavaScript"], hue: "from-fuchsia-500/40 via-pink-500/20 to-rose-500/40" },
+  { name: "Iris", tag: "Desktop AI Assistant", problem: "Repetitive desktop tasks eat hours every week.", solution: "Voice-controlled Python assistant that automates workflows.", metric: "Personal project", stack: ["Python"], hue: "from-amber-500/40 via-orange-500/20 to-red-500/40" },
 ];
 
 export function Projects() {

@@ -2,12 +2,12 @@ import { Brain, Zap, Code2, Rocket, Layers, Palette } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const services = [
-  { Icon: Brain, t: "AI Solutions", d: "LLM apps, agents, and evals — built for production." },
-  { Icon: Zap, t: "Automation", d: "Internal tools and workflows that replace whole teams." },
-  { Icon: Code2, t: "Web Development", d: "Fast, delightful, and built to scale from day one." },
-  { Icon: Rocket, t: "Startup Consulting", d: "0→1 strategy, hiring, and technical due diligence." },
-  { Icon: Layers, t: "Product Development", d: "From napkin sketch to shipped and loved." },
-  { Icon: Palette, t: "UI/UX", d: "Interfaces that make users feel like superhumans." },
+  { Icon: Brain, t: "AI Solutions", d: "LLM apps, agents, and intelligent workflows built for real-world use." },
+  { Icon: Zap, t: "AI Automation", d: "Automate repetitive workflows and internal ops with AI-first tooling." },
+  { Icon: Code2, t: "Web Development", d: "Modern, fast, and delightful web apps built to scale." },
+  { Icon: Rocket, t: "MVP Development", d: "Take an idea from zero to a working, shippable product — fast." },
+  { Icon: Layers, t: "Product Strategy", d: "Product vision, positioning, and roadmap for early-stage founders." },
+  { Icon: Palette, t: "Startup Consulting", d: "0→1 guidance on building, launching, and growing your startup." },
 ];
 
 export function Services() {

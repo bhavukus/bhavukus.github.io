@@ -1,17 +1,17 @@
 import { Reveal, SectionHeader } from "./Reveal";
 
 const pillars = [
-  { k: "Mission", v: "Build AI-native products that give individuals leverage of entire teams." },
-  { k: "Vision", v: "A world where every founder ships at the speed of thought." },
-  { k: "Philosophy", v: "Taste is a moat. Speed is a feature. Distribution wins." },
+  { k: "Mission", v: "Build AI-powered products that solve meaningful problems and improve everyday life through intelligent automation." },
+  { k: "Vision", v: "To create globally impactful technology companies that redefine how people interact with AI and digital services." },
+  { k: "Philosophy", v: "Build products that solve real problems — not products that simply showcase technology." },
 ];
 
 const timeline = [
-  { y: "2018", t: "First startup", d: "Sold a browser extension to 40k users in six months." },
-  { y: "2020", t: "Big tech, big lessons", d: "Shipped ML infra at scale. Learned what not to do." },
-  { y: "2022", t: "Went independent", d: "Consulted for 20+ AI-native teams from seed to Series B." },
-  { y: "2024", t: "Founded a company", d: "Raised, built, and shipped an AI product used by thousands." },
-  { y: "2026", t: "What's next", d: "Investing in agents, ambient interfaces, and post-SaaS." },
+  { y: "Early", t: "First lines of code", d: "Curiosity about software evolved into a passion for building — not just coding." },
+  { y: "2023", t: "Byteify", d: "Created educational programming content and beginner-friendly coding projects." },
+  { y: "2024", t: "Independent Developer", d: "Started building AI products, automation workflows, and startup MVPs." },
+  { y: "2026", t: "Founded Groomsta", d: "Leading product, brand, and business for an AI-powered grooming marketplace." },
+  { y: "Next", t: "AI Healthcare OS", d: "Designing autonomous AI systems for healthcare administration and beyond." },
 ];
 
 export function About() {
@@ -19,8 +19,8 @@ export function About() {
     <section id="about" className="relative mx-auto max-w-6xl px-4 py-32">
       <SectionHeader
         eyebrow="The Story"
-        title="Operator. Engineer. Builder."
-        sub="I've spent a decade turning ambiguous problems into products people pay for. Here's the throughline."
+        title="Founder. Engineer. Builder."
+        sub="A Computer Science student turned founder, obsessed with building AI-first products that create measurable impact."
       />
       <div className="mt-16 grid gap-4 md:grid-cols-3">
         {pillars.map((p, i) => (

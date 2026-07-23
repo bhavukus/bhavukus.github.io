@@ -1,12 +1,12 @@
 import { Reveal, SectionHeader } from "./Reveal";
 
 const groups = [
-  { g: "AI", items: ["LLMs", "RAG", "Agents", "Fine-tuning", "Evals", "Vector DBs"] },
-  { g: "Engineering", items: ["TypeScript", "Python", "Rust", "Next.js", "Postgres", "Kubernetes"] },
-  { g: "Business", items: ["GTM", "Pricing", "Fundraising", "Sales", "Ops"] },
-  { g: "Design", items: ["Product", "Brand", "Motion", "Systems"] },
-  { g: "Leadership", items: ["Hiring", "0→1", "Team building", "Storytelling"] },
-  { g: "Marketing", items: ["SEO", "Content", "Community", "Distribution"] },
+  { g: "AI", items: ["Prompt Engineering", "AI Automation", "AI Agents", "LLM Applications", "Workflow Automation"] },
+  { g: "Development", items: ["Java", "Python", "JavaScript", "HTML", "CSS", "React", "Next.js", "Git", "REST APIs"] },
+  { g: "Business", items: ["Startup Strategy", "Product Thinking", "Market Research", "Customer Discovery", "MVP Development"] },
+  { g: "Marketing", items: ["Brand Positioning", "Content Strategy", "Social Media", "Growth Marketing", "Founder Branding"] },
+  { g: "Leadership", items: ["Product Vision", "Team Collaboration", "Project Management", "Problem Solving"] },
+  { g: "Design", items: ["UI/UX Fundamentals", "Canva", "AI-assisted Design"] },
 ];
 
 export function Skills() {

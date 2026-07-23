@@ -1,10 +1,9 @@
 import { Reveal, SectionHeader } from "./Reveal";
 
 const items = [
-  { org: "Helios AI", role: "Founder & CEO", when: "2024 — Now", pts: ["Raised seed round", "Built founding team of 8", "0 → $1.4M ARR in 11 months"] },
-  { org: "Independent", role: "Advisor & Engineer", when: "2022 — 2024", pts: ["Shipped 20+ launches", "Advised 3 YC companies", "Built the Prism design system"] },
-  { role: "Staff Engineer", org: "BigCo", when: "2020 — 2022", pts: ["Led ML platform team", "Cut inference cost 6x", "Mentored 12 engineers"] },
-  { role: "Co-founder", org: "First startup", when: "2018 — 2020", pts: ["40k+ users in six months", "Acquired by a public company", "First taste of founder mode"] },
+  { role: "Founder", org: "Groomsta", when: "2026 — Present", pts: ["Leading product development end-to-end", "Owning brand, marketing, and business strategy", "Pilot launch shipped"] },
+  { role: "Independent Developer", org: "Self", when: "2024 — Present", pts: ["Building AI products and automation workflows", "Shipping web applications and startup MVPs", "Validating multiple startup concepts"] },
+  { role: "Content Creator", org: "Byteify", when: "2023 — 2024", pts: ["Created educational programming content", "Built beginner-friendly coding projects", "Reached thousands of learners"] },
 ];
 
 export function Experience() {
