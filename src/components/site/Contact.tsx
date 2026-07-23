@@ -32,16 +32,16 @@ export function Contact() {
             </motion.button>
           </form>
         </Reveal>
-        <Reveal delay={0.1} className="md:col-span-2">
-          <div className="glass flex h-full flex-col rounded-3xl p-6 md:p-8">
+        <Reveal delay={0.1} className="flex flex-col gap-6 md:col-span-2">
+          <div className="glass flex flex-col rounded-3xl p-6 md:p-8">
             <div className="flex items-center gap-2 text-primary">
               <Mail className="h-4 w-4" />
               <span className="text-xs font-medium uppercase tracking-[0.15em]">Direct</span>
             </div>
             <p className="mt-3 text-lg font-medium leading-snug text-foreground">Prefer email? Reach out directly — I read every message.</p>
             <a href="mailto:bhavukus@gmail.com" className="glass mt-5 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.02]">bhavukus@gmail.com →</a>
-            <div className="mt-auto">
-              <div className="mb-3 mt-8 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Elsewhere</div>
+            <div className="mt-8">
+              <div className="mb-3 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Elsewhere</div>
               <div className="flex gap-2">
                 {[
                   { Icon: Github, href: "https://github.com/bhavukus" },
@@ -55,6 +55,18 @@ export function Contact() {
                 ))}
               </div>
             </div>
+          </div>
+          <div className="glass flex flex-col rounded-3xl p-6 md:p-8">
+            <div className="flex items-center gap-2 text-primary">
+              <Calendar className="h-4 w-4" />
+              <span className="text-xs font-medium uppercase tracking-[0.15em]">Book a call</span>
+            </div>
+            <p className="mt-3 text-lg font-medium leading-snug text-foreground">Want to discuss an idea or collaboration? Grab a 30-minute slot.</p>
+            <a href="https://calendly.com/bhavukus/30min" target="_blank" rel="noopener noreferrer" className="group relative mt-5 inline-flex items-center justify-center gap-2 overflow-hidden rounded-full bg-foreground px-4 py-3 text-sm font-semibold text-background transition-transform hover:scale-[1.02]">
+              <span className="relative z-10">Schedule a meeting</span>
+              <Video className="relative z-10 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+              <span className="absolute inset-0 opacity-0 blur-xl transition-opacity group-hover:opacity-70" style={{ background: "var(--gradient-text)" }} />
+            </a>
           </div>
         </Reveal>
       </div>
