@@ -36,7 +36,6 @@ export function Hero() {
           Hello, I'm{" "}
           <span className="text-gradient">Bhavuk</span>.
           <br />
-          <span className="text-muted-foreground/60">I build</span>{" "}
           <span className="relative inline-block align-baseline">
             <AnimatePresence mode="wait">
               <motion.span
