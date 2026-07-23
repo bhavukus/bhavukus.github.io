@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Send, Calendar, Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Send, Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
   return (
     <section id="contact" className="relative mx-auto max-w-5xl px-4 py-32">
-      <SectionHeader eyebrow="Get In Touch" title="Let's build something." sub="Consulting, collaboration, or coffee — the inbox is open." />
+      <SectionHeader eyebrow="Get In Touch" title="Let's build something." sub="Collaborations, startup opportunities, or a quick hello — the inbox is open." />
       <div className="mt-16 grid gap-6 md:grid-cols-5">
         <Reveal className="md:col-span-3">
           <form onSubmit={(e) => { e.preventDefault(); setSent(true); }} className="glass rounded-3xl p-6 md:p-8">
@@ -35,16 +35,21 @@ export function Contact() {
         <Reveal delay={0.1} className="md:col-span-2">
           <div className="glass flex h-full flex-col rounded-3xl p-6 md:p-8">
             <div className="flex items-center gap-2 text-primary">
-              <Calendar className="h-4 w-4" />
-              <span className="text-xs font-medium uppercase tracking-[0.15em]">Book a call</span>
+              <Mail className="h-4 w-4" />
+              <span className="text-xs font-medium uppercase tracking-[0.15em]">Direct</span>
             </div>
-            <p className="mt-3 text-lg font-medium leading-snug text-foreground">30 minutes. No decks. Just a real conversation about your project.</p>
-            <a href="#" className="glass mt-5 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.02]">Open calendar →</a>
+            <p className="mt-3 text-lg font-medium leading-snug text-foreground">Prefer email? Reach out directly — I read every message.</p>
+            <a href="mailto:bhavukus@gmail.com" className="glass mt-5 inline-flex items-center justify-center gap-2 rounded-full px-4 py-3 text-sm font-semibold text-foreground transition-transform hover:scale-[1.02]">bhavukus@gmail.com →</a>
             <div className="mt-auto">
               <div className="mb-3 mt-8 text-xs font-medium uppercase tracking-[0.15em] text-muted-foreground">Elsewhere</div>
               <div className="flex gap-2">
-                {[Github, Linkedin, Twitter, Mail].map((Icon, idx) => (
-                  <a key={idx} href="#" className="glass grid h-10 w-10 place-items-center rounded-xl text-muted-foreground transition-all hover:scale-110 hover:text-foreground">
+                {[
+                  { Icon: Github, href: "https://github.com/bhavukus" },
+                  { Icon: Linkedin, href: "https://linkedin.com/in/bhavukus" },
+                  { Icon: Twitter, href: "https://x.com/bhavukus" },
+                  { Icon: Instagram, href: "https://instagram.com/pvtfouonder" },
+                ].map(({ Icon, href }, idx) => (
+                  <a key={idx} href={href} target="_blank" rel="noopener noreferrer" className="glass grid h-10 w-10 place-items-center rounded-xl text-muted-foreground transition-all hover:scale-110 hover:text-foreground">
                     <Icon className="h-4 w-4" />
                   </a>
                 ))}

@@ -2,9 +2,9 @@ import { ArrowUpRight } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 
 const posts = [
-  { t: "The post-SaaS thesis", d: "Why the next $10B companies won't sell seats.", m: "8 min read", tag: "Essay" },
-  { t: "Building your first agent", d: "A no-BS guide to shipping LLM agents in prod.", m: "12 min read", tag: "Engineering" },
-  { t: "Taste as a moat", d: "How Apple, Linear, and Vercel win with restraint.", m: "6 min read", tag: "Design" },
+  { t: "Why most startups don't need more features", d: "Focus is the ultimate feature. A short essay on shipping less, better.", m: "5 min read", tag: "Essay" },
+  { t: "Building AI products that people actually use", d: "Lessons on shipping AI features users adopt — not just demo.", m: "8 min read", tag: "AI" },
+  { t: "Lessons learned while building Groomsta", d: "Notes from building an AI-powered grooming marketplace from scratch.", m: "7 min read", tag: "Founder" },
 ];
 
 export function Blog() {

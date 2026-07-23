@@ -19,10 +19,10 @@ function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
 }
 
 const stats = [
-  { n: 40, suffix: "+", l: "Products shipped" },
-  { n: 10, suffix: "M+", l: "Users reached" },
-  { n: 8, suffix: "", l: "Awards & features" },
-  { n: 24, suffix: "", l: "Hackathons won" },
+  { n: 12, suffix: "+", l: "Products & MVPs built" },
+  { n: 3200, suffix: "+", l: "Platform users reached" },
+  { n: 18000, suffix: "+", l: "Content views" },
+  { n: 40, suffix: "+", l: "Technologies explored" },
 ];
 
 export function Achievements() {
