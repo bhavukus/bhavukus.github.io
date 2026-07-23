@@ -12,6 +12,7 @@ import { Services } from "@/components/site/Services";
 import { Blog } from "@/components/site/Blog";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
+import { FloatingContact } from "@/components/site/FloatingContact";
 
 export const Route = createFileRoute("/")({
   head: () => ({
