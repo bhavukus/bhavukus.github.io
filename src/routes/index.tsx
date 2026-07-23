@@ -42,6 +42,7 @@ function Index() {
       <Blog />
       <Contact />
       <Footer />
+      <FloatingContact />
     </main>
   );
 }
