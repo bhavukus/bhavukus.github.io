@@ -20,12 +20,17 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: npm install
       - run: npm run build
+      
+      # This lists your output directories so we can see exactly where the files went if it fails again
+      - run: ls -la
+      - run: ls -la .output || echo "No .output folder found"
+      
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./.output/public
           
   deploy:
     needs: build
